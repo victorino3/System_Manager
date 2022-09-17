@@ -8,7 +8,7 @@
     "start": "nodemon ./BusinessLogic/app/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Victorino Gomes",
   "license": "ISC",
   "dependencies": {
     "assert": "^2.0.0",
