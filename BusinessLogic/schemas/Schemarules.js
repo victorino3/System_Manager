@@ -225,4 +225,6 @@ class Shemas extends Server {
 
 };
 
-new Shemas();
+module.exports= new Shemas();
+
+
