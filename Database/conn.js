@@ -3,7 +3,7 @@ const Mongoose = require("mongoose")
 class Server {
     static #connected
     #connect() {
-        Mongoose.connect("mongodb+srv://VictorinoAdmin:HAjd7YQe4cL2wB2@cluster01.wovl4uk.mongodb.net/?retryWrites=true&w=majority", {
+        Mongoose.connect(process.env.URL, {
             useNewUrlParser: true
         }, function (error) {
             if (!error) return;
