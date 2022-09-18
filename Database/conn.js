@@ -1,4 +1,3 @@
-//mongodb+srv://VictorinoAdmin:HAjd7YQe4cL2wB2@cluster01.wovl4uk.mongodb.net/?retryWrites=true&w=majority
 const Mongoose = require("mongoose")
 class Server {
     static #connected
