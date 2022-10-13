@@ -1,5 +1,6 @@
 const express = require('express')
-const port = process.env.PORT
+const port = process.env.Port
+
 const cors = require('cors')
 const app = express()
 
@@ -14,9 +15,9 @@ app.use(cors({credentials: true, origin: '*'}))
 
 
 //routers call
-const logicBusiness = require('../controller/routes/logicBusiness')
+const routesBusiness = require('../controller/routes/routesBusiness')
 
-//app.use(logicBusiness)
+app.use(routesBusiness)
 
 //app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openApiDocumentation));
 //Port number

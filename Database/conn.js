@@ -2,7 +2,7 @@ const Mongoose = require("mongoose")
 class Server {
     static #connected
     #connect() {
-        Mongoose.connect(process.env.URL, {
+        Mongoose.connect(process.env.Url, {
             useNewUrlParser: true
         }, function (error) {
             if (!error) return;
@@ -22,4 +22,5 @@ class Server {
 
 }
 
-module.exports = Server
+
+module.exports = new Server()
